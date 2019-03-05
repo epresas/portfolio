@@ -1,0 +1,44 @@
+footer{
+    background-color: #03627D;
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer ul li{
+    display: inline-block;
+  }
+  .footer-links {
+    text-decoration: none;
+    font-family: $font-pt-sans;
+    color: rgb(29, 28, 28);
+    transition: all .6s;
+  }
+  .footer-links:hover {
+    font-family: 'PT Sans',sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .social-icon{
+    margin: 10px 5px 20px;
+    width: 26px;
+    &.social-icon--github{
+      background-image: url('../../../img/svg/github-black.svg');
+    }
+  }
+  #githubBlack{
+    transition: transform .3s;
+  }
+  #githubBlack:hover{
+    transform: scale(1.1)
+  }
+  #skypeBlack{
+    transition: transform .3s;
+  }
+  #skypeBlack:hover{
+    transform: scale(1.1)
+  }
+  #linkedinBlack{
+    transition: transform .3s;
+  }
+  #linkedinBlack:hover{
+    transform: scale(1.1)
+  }
+  

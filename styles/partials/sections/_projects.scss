@@ -1,0 +1,91 @@
+#projects{
+    background: rgba(0, 0, 0, 0) url("../img/responsive-web-design-web-veil.jpg") no-repeat fixed center bottom/ cover;
+  }
+  
+  // #projects::after{
+  //   content: '';
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   background: inherit;
+  //   z-index: -1;
+  //   bottom: 0;
+  //   transform-origin: right bottom;
+  //   transform: skewY(-3deg);
+  // }
+  
+  
+  #projects h2{
+    color: white;
+    margin-bottom: 60px;
+  }
+  #projects header{
+    margin-bottom: 20px;
+  }
+  #projects header p{
+    color:white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .projectList .content{
+   
+    margin-bottom: 30px;
+    transition: opacity .5s, transform .8s;
+    transform: translateY(60px);
+    opacity: 0;
+   
+  }
+  .projectList .content.visible{
+  
+    transform: translateY(0);
+    opacity: 1;
+   
+  }
+  
+  .frame{
+    padding: 20px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+  }
+  
+   .frame h5{
+    color: white;
+  }
+  
+   .frame img{
+     width:100%;
+  }
+  .showModal {
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    top: 50%;
+    display: none;
+    /* transition: all .5s; */
+  }
+  .veil {
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+      position: absolute;
+      width: 94.9%;
+      height: 100%;
+      top: 0;
+    left: 2.5%;
+    transition: opacity .3s;
+  }
+  .veil.visible{
+    opacity: 1;
+   
+  }
+  
+  #recomendations h2{
+    margin-top: 120px;
+  }
+  

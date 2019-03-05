@@ -1,0 +1,164 @@
+/* REFACTORIZACION */
+.menu{
+  transition: trans
+}
+.menu-desktop{
+  z-index: 900;
+  position:fixed;
+  width: 100%;
+  transition: background-color .4s ease-in ;
+  display: none;
+  .menu__nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    .menu__nav-list-item{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      .menu__nav-list-item-link{
+        text-align: center;
+        padding: 0 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 70px;
+        text-decoration: none;
+        transition: all 0.5s;
+        color: $white;
+        font-family: $font-raleway;
+        &:hover,&:focus{
+          background-color: $blue-primary;
+          color:white; 
+        }
+      }
+    }
+  }
+  &.menu--dark{
+    color: $white;
+    background-color: rgba(3, 29, 45, 0.5);
+  }
+  @media (min-width: $screen-min-sm) {
+    display: block;
+  }
+}
+
+.menu-responsive {
+  z-index: 900;
+  position:fixed;
+  width: 100%;
+  .menu__nav-list{
+    // display: flex;
+    list-style: none;
+  }
+}
+
+/* MENU HAMBURGER */
+
+.menu{
+  background-color: RGBA(1,5,21,0);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 0; 
+  &.menu--closed{
+      height: 0vh;
+      transition: height 3s linear;
+  }
+  &.menu--open{
+      height: 100vh;
+      background-color: RGBA(1,5,21,.7);
+      .menu__nav{
+          transform: translate(-50%, -50%);
+          transition: transform .3s ease-in;
+      }
+      .toggle-btn{
+          border-color: $white;
+          .toggle-btn__bar{
+            background-color: $white;
+          }
+          .toggle-btn__bar-top{
+              transform: rotate(35deg) translate(4px, 6px);
+          }
+          .toggle-btn__bar-middle{
+              opacity: 0;
+          }
+          .toggle-btn__bar-bottom{
+              transform: rotate(-35deg) translate(4px, -6px);
+          }
+      }
+  }
+}
+
+.menu__nav {
+  position: relative;
+  margin-top: -70px; // para contrarrestar el tamaño + margin del botón toggle y quede centrado
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -50%);
+  transition: all .3s ease-out;
+}
+
+.menu__nav-list{
+  text-align: center;
+}
+
+.menu__nav-list-item{
+  list-style: none;
+  line-height: 40px;
+  font-size: 1.3em;
+}
+
+.menu__nav-list-item-link {
+  font-weight: 400;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color .5s ease;
+  font-family: $font-raleway;
+  &:hover,&:focus {
+    color: lighten($blue-primary, 30%);
+  }
+}
+
+.menu__btn {
+  background-color: transparent;
+  border: 1px solid $white;
+  cursor: pointer;
+  height: 30px;
+  width: 40px;
+  margin: 20px;
+  position: static;
+  transition: all .2s ease-out;
+  outline: 0;
+  padding: 2px;
+  &:focus{
+      border-color: lighten($blue-primary,30%);
+      outline: none;
+      .toggle-btn__bar{
+          background-color: lighten($blue-primary,30%);
+      }
+  }
+  @media all and(min-width: 768px){
+      margin: 30px;
+  }
+}
+
+.menu__btn--dark {
+  border-color: $blue-primary;
+  .toggle-btn__bar{
+    background-color: $blue-primary;
+  }
+}
+
+.toggle-btn__bar {
+  width: 33px;
+  height: 4px;
+  background: $white;
+  margin: 3px 1px;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}

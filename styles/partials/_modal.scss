@@ -1,0 +1,47 @@
+#modalBg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    display: none;
+    z-index: 1000;
+  }
+  
+#modalContent {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #ccc;
+  color: black;
+  display: none;
+  z-index: 1100;
+}
+
+#modalTitle {
+  padding: 10px 0;
+  margin-top: 45px;
+}
+
+#modalText{
+  line-height: 1.8em;
+}
+
+#modalClose {
+  text-transform: uppercase;
+  position: absolute;
+  right: 3%;
+  cursor: pointer;
+  padding: 10px 15px;
+  top: 8%;
+}
+
+#modalClose:hover {
+  border-radius: 20px;
+  background: rgba(159, 159, 159, 0.4);
+}

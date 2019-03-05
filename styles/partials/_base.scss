@@ -1,0 +1,91 @@
+/* RESETEO PADDING MARGIN */
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    font-weight: 400;
+    color: $grey-medium;
+    background-color: rgb(247, 247, 247);
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    color: $white;
+    margin-bottom: 30px;
+    @media (min-width: $screen-min-s){
+      font-size: 3em;
+    }
+    @media (min-width: $screen-min-sm){
+      font-size: 3.5em;
+    }
+  }
+  h2 {
+    font-family: $font-raleway;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 80px;
+    color:rgb(11, 45, 90);
+  }
+  
+  h3{
+    font-family: $font-raleway;
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  
+  h1,h2,h3{
+    text-transform: uppercase;
+  }
+  
+  p{
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-family: $font-pt-sans;
+  }
+  section{
+    padding: 100px 0 80px; 
+    
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+    margin-top: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: $font-pt-sans;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .5s;
+    &.button--dark {
+      border: 1px solid $white;
+      color: $white;
+      &:hover{
+        background-color: $white;
+        color: $grey-dark;
+      }
+    }
+  
+    &.button--light {
+      color: $blue-primary;
+      border: 1px solid $blue-primary;
+      background-color: transparent;
+      &:hover{
+        color: $white;
+        background-color:  $blue-primary;
+      }
+    }
+  }
