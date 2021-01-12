@@ -1,0 +1,56 @@
+{
+  "name": "ep-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
+    "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "watch": "run-p serve watch:*",
+    "build": "run-p build:*"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4",
+    "vivus": "^0.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epresas/portfolio.git"
+  },
+  "author": "Edmundo J Presas I",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epresas/portfolio/issues"
+  },
+  "homepage": "https://github.com/epresas/portfolio#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "htmlnano": "^0.2.5",
+    "imagemin-cli": "^5.1.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "postcss-cli": "^7.1.0",
+    "posthtml": "^0.12.0",
+    "posthtml-cli": "^0.5.2",
+    "posthtml-modules": "^0.4.2",
+    "stylelint": "^13.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "description": ""
+}

@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Edmundo Presas</title>
-    <meta name="description" content="Portafolio / Currículum online Edmundo Presas">
+  <title>Edmundo Presas</title>
+  <meta name="description" content="Portafolio / Currículum online Edmundo Presas">
 
-    <!-- Codificación -->
-    <meta charset="UTF-8">
-
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-
-    <!-- Robots -->
-    <meta name="robots" content="index,follow">
-
-    <!-- Estilos -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fonticon/flaticon.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-
-    
+  <meta charset="UTF-8">
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <!-- Robots -->
+  <meta name="robots" content="index,follow">
+  <!-- Styles -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonticon/flaticon.css">
+  <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">    
 
 </head>
 <body>
-    <!-- Spinner de carga -->
-    <div class="spinner__overlay">
-        <div class="spinner__wrapper">
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-            <div class="spinner__tile"></div>
-        </div>
-    </div>
+  <!-- Spinner  -->
+  <module href="/partials/spinner.html"></module>
 
-    <a href="#mainContent" class="sr-only">Ir a zona de contenidos</a>
-    <div class="menu-wrapper menu-responsive d-md-none">
-        <div class="menu">
-            <button class="menu__btn toggle-btn" >
-            <div class="toggle-btn__bar toggle-btn__bar-top"></div>
-            <div class="toggle-btn__bar toggle-btn__bar-middle"></div>
-            <div class="toggle-btn__bar toggle-btn__bar-bottom"></div>
-            </button>
-            <nav class="menu__nav" role="navigation" aria-labelledby="mainMenuLabel">
-                <h2 class="sr-only" id="mainMenuLabel">Menú principal móvil</h2>
-            <ul class="menu__nav-list no-padding-x">
-                <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#inicio-about" class="text-uppercase menu__nav-list-item-link" >Inicio</a></li>
-                <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#projects" class="text-uppercase menu__nav-list-item-link" >Proyectos</a></li>
-                <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#skills" class="text-uppercase menu__nav-list-item-link" >Habilidades</a></li>
-                <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#contact" class="text-uppercase menu__nav-list-item-link" >Contacto</a></li>
-            </ul>
-            </nav>
-        </div>
+  <!-- Main content -->
+  <a href="#mainContent" class="sr-only">Ir a zona de contenidos</a>
+  <div class="menu-wrapper menu-responsive d-md-none">
+    <div class="menu">
+      <button class="menu__btn toggle-btn" >
+      <div class="toggle-btn__bar toggle-btn__bar-top"></div>
+      <div class="toggle-btn__bar toggle-btn__bar-middle"></div>
+      <div class="toggle-btn__bar toggle-btn__bar-bottom"></div>
+      </button>
+      <nav class="menu__nav" role="navigation" aria-labelledby="mainMenuLabel">
+        <h2 class="sr-only" id="mainMenuLabel">Menú principal móvil</h2>
+      <ul class="menu__nav-list no-padding-x">
+        <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#inicio-about" class="text-uppercase menu__nav-list-item-link" >Inicio</a></li>
+        <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#projects" class="text-uppercase menu__nav-list-item-link" >Proyectos</a></li>
+        <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#skills" class="text-uppercase menu__nav-list-item-link" >Habilidades</a></li>
+        <li class="menu__nav-list-item mb-4"><a href="#" data-navigation data-level="#contact" class="text-uppercase menu__nav-list-item-link" >Contacto</a></li>
+      </ul>
+      </nav>
     </div>
-    <header class="menu-desktop">
-        <nav class="menu-desktop__nav">
-            <h2 class="sr-only">Menu principal desktop</h2>
-            <ul class="menu__nav-list">
-                <li class="menu__nav-list-item"><a href="#" data-navigation data-level="#inicio-about" class=" menu__nav-list-item-link">Inicio</a></li>
-                <li class="menu__nav-list-item"><a href="#" data-navigation data-level="#projects" class="navigation menu__nav-list-item-link">Proyectos</a></li>
-                <li class="menu__nav-list-item"><a href="#" data-navigation data-level="#skills" class="navigation menu__nav-list-item-link">Habilidades</a></li>
-                <li class="menu__nav-list-item"><a href="#" data-navigation data-level="#contact" class="navigation menu__nav-list-item-link">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  </div>
+  <header class="menu-desktop">
+    <nav class="menu-desktop__nav">
+      <h2 class="sr-only">Menu principal desktop</h2>
+      <ul class="menu__nav-list">
+        <li class="menu__nav-list-item">
+          <a href="#" data-navigation data-level="#inicio-about" class=" menu__nav-list-item-link">Inicio</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" data-navigation data-level="#projects" class="navigation menu__nav-list-item-link">Proyectos</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" data-navigation data-level="#skills" class="navigation menu__nav-list-item-link">Habilidades</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" data-navigation data-level="#contact" class="navigation menu__nav-list-item-link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     
     <main>
@@ -405,19 +396,8 @@
     </footer>
 
 <!-- ------------------------------------MODAL----------------------------------------------- -->
+<module href="/partials/modal.html"></module>
 
-    <div id="modal">
-        <div id="modal__content">
-            <div id="modal__btn-close">Cerrar</div>
-            <h3 id="modal__title"></h3>
-            <p id="modal__text"></p>
-        </div>
-    </div>
-
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="./js/vendor/owl.carousel.min.js"></script>
-    <script src="./js/script.js"></script>
+ <script src="./bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+// Padding and Margin
+.no-padding {
+  padding: 0;
+}
+.no-padding-x {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-padding-y {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.no-margin-x {
+  margin-left: 0;
+  margin-right: 0;
+}
+.no-margin-y {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Visibility
+.is-hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
